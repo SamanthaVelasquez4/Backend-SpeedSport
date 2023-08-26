@@ -1,0 +1,92 @@
+[{
+  "_id": {
+    "$oid": "64e71a97629713ba0520ea6b"
+  },
+  "primerNombre": "Alejandro",
+  "segundoNombre": "David",
+  "primerApellido": "Gonzales",
+  "segundoApellido": "Pineda",
+  "usuario": "alejandrogonzales@ssport.hn",
+  "contrasena": "1234",
+  "numTelefono": "+504 9985-3621",
+  "genero": "M",
+  "edad": 30,
+  "pedidoTomados": [
+    {
+      "$oid": "64e989aae572e315ef4311f3"
+    }
+  ],
+  "pedidoEntregados": [
+    {
+      "$oid": "64e989b5e572e315ef4311f9"
+    }
+  ],
+  "mensajes": [
+    {
+      "encabezado": "¡Se le ha asignado un nuevo pedido!",
+      "contenido": "Por favor revise su apartado de tomados.",
+      "estado": true
+    },
+    {
+      "encabezado": "¡Se le ha asignado un nuevo pedido!",
+      "contenido": "Por favor revise su apartado de tomados.",
+      "estado": false
+    }
+  ],
+  "tipoVehiculo": "Moto",
+  "placa": "YG6O-BBD3",
+  "calificacion": 5,
+  "__v": 0,
+  "img": "../img/usuario.png"
+},
+{
+  "_id": {
+    "$oid": "64e72a52b3b52d037bbcd05d"
+  },
+  "primerNombre": "Juan",
+  "segundoNombre": "Roberto",
+  "primerApellido": "Gamez",
+  "segundoApellido": "Figueroa",
+  "usuario": "juangamez@ssport.hn",
+  "contrasena": "1234",
+  "numTelefono": "+504 3837-0901",
+  "genero": "M",
+  "edad": 28,
+  "pedidoTomados": [
+    {
+      "$oid": "64e989c1e572e315ef4311ff"
+    },
+    {
+      "$oid": "64e989e7e572e315ef431211"
+    }
+  ],
+  "pedidoEntregados": [],
+  "mensajes": [],
+  "tipoVehiculo": "Moto",
+  "placa": "HY09-AA2U",
+  "calificacion": 5,
+  "img": "../img/usuario.png",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e732c7b3b52d037bbcd06a"
+  },
+  "primerNombre": "Maria",
+  "segundoNombre": "Jose",
+  "primerApellido": "Zelaya",
+  "segundoApellido": "Cruz",
+  "usuario": "mariazelaya@ssport.hn",
+  "contrasena": "1234",
+  "numTelefono": "+504 9986-5235",
+  "genero": "F",
+  "edad": 21,
+  "pedidoTomados": [],
+  "pedidoEntregados": [],
+  "mensajes": [],
+  "tipoVehiculo": "Moto",
+  "placa": "Y76B-OO3F",
+  "calificacion": 5,
+  "img": "../img/usuario2.png",
+  "__v": 0
+}]

@@ -1,0 +1,164 @@
+[{
+  "_id": {
+    "$oid": "64e989aae572e315ef4311f3"
+  },
+  "img": "https://img.freepik.com/vector-premium/icono-marca-verificacion-verde-pantalla-telefono-inteligente_163786-734.jpg",
+  "_idFactura": {
+    "$oid": "64e989aae572e315ef4311f1"
+  },
+  "costoEnvio": 65,
+  "motorista": {
+    "_id": "64e71a97629713ba0520ea6b",
+    "nombre": "Alejandro Gonzales",
+    "numTelefono": "+504 9985-3621",
+    "tipoVehiculo": "Moto",
+    "placa": "YG6O-BBD3",
+    "calificacion": 5
+  },
+  "ubicacion": "Col. Kennedy",
+  "calificacion": 0,
+  "estadoCliente": "En tienda",
+  "estadoPedido": "Tomado",
+  "total": 4665,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989b5e572e315ef4311f9"
+  },
+  "img": "https://img.freepik.com/free-vector/person-receiving-package-paying-delivery_23-2148773021.jpg?w=740&t=st=1693022482~exp=1693023082~hmac=c0c72cd3c6a2e05e9589da8bd6cd2b2bef1d86bdec85f219f898885cecb8dfba",
+  "_idFactura": {
+    "$oid": "64e989b5e572e315ef4311f7"
+  },
+  "costoEnvio": 65,
+  "motorista": {
+    "_id": "64e71a97629713ba0520ea6b",
+    "nombre": "Alejandro Gonzales",
+    "numTelefono": "+504 9985-3621",
+    "tipoVehiculo": "Moto",
+    "placa": "YG6O-BBD3",
+    "calificacion": 5
+  },
+  "ubicacion": "Residencial las Uvas.",
+  "calificacion": 0,
+  "estadoCliente": "Entregado",
+  "estadoPedido": "Entregado",
+  "total": 1790,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989c1e572e315ef4311ff"
+  },
+  "img": "https://img.freepik.com/vector-premium/icono-marca-verificacion-verde-pantalla-telefono-inteligente_163786-734.jpg",
+  "_idFactura": {
+    "$oid": "64e989c1e572e315ef4311fd"
+  },
+  "costoEnvio": 65,
+  "motorista": {
+    "_id": "64e72a52b3b52d037bbcd05d",
+    "nombre": "Juan Gamez",
+    "numTelefono": "+504 3837-0901",
+    "tipoVehiculo": "Moto",
+    "placa": "HY09-AA2U",
+    "calificacion": 5
+  },
+  "ubicacion": "Col. Kennedy por el parque.",
+  "calificacion": 0,
+  "estadoCliente": "En destino",
+  "estadoPedido": "Tomado",
+  "total": 8115,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989d1e572e315ef431205"
+  },
+  "img": "https://img.freepik.com/vector-premium/caja-naranja-codigo-barras_867743-168.jpg?w=2000",
+  "_idFactura": {
+    "$oid": "64e989d1e572e315ef431203"
+  },
+  "costoEnvio": 65,
+  "motorista": null,
+  "ubicacion": "UNAH-CU",
+  "calificacion": 0,
+  "estadoCliente": "Buscando repartidor",
+  "estadoPedido": "Pedido",
+  "total": 5240,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989dae572e315ef43120b"
+  },
+  "img": "https://img.freepik.com/vector-premium/caja-naranja-codigo-barras_867743-168.jpg?w=2000",
+  "_idFactura": {
+    "$oid": "64e989dae572e315ef431209"
+  },
+  "costoEnvio": 65,
+  "motorista": null,
+  "ubicacion": "UNAH-CU",
+  "calificacion": 0,
+  "estadoCliente": "Buscando repartidor",
+  "estadoPedido": "Pedido",
+  "total": 8115,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989e7e572e315ef431211"
+  },
+  "img": "https://img.freepik.com/vector-premium/icono-marca-verificacion-verde-pantalla-telefono-inteligente_163786-734.jpg",
+  "_idFactura": {
+    "$oid": "64e989e7e572e315ef43120f"
+  },
+  "costoEnvio": 65,
+  "motorista": {
+    "_id": "64e72a52b3b52d037bbcd05d",
+    "nombre": "Juan Gamez",
+    "numTelefono": "+504 3837-0901",
+    "tipoVehiculo": "Moto",
+    "placa": "HY09-AA2U",
+    "calificacion": 5
+  },
+  "ubicacion": "Villa Olimpica",
+  "calificacion": 0,
+  "estadoCliente": "En camino",
+  "estadoPedido": "Tomado",
+  "total": 4665,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989f8e572e315ef431217"
+  },
+  "img": "https://img.freepik.com/vector-premium/caja-naranja-codigo-barras_867743-168.jpg?w=2000",
+  "_idFactura": {
+    "$oid": "64e989f8e572e315ef431215"
+  },
+  "costoEnvio": 65,
+  "motorista": null,
+  "ubicacion": "Villa Olimpica",
+  "calificacion": 0,
+  "estadoCliente": "Buscando repartidor",
+  "estadoPedido": "Pedido",
+  "total": 7252.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e98a00e572e315ef43121d"
+  },
+  "img": "https://img.freepik.com/vector-premium/caja-naranja-codigo-barras_867743-168.jpg?w=2000",
+  "_idFactura": {
+    "$oid": "64e98a00e572e315ef43121b"
+  },
+  "costoEnvio": 65,
+  "motorista": null,
+  "ubicacion": "Plaza Miraflores",
+  "calificacion": 0,
+  "estadoCliente": "Buscando repartidor",
+  "estadoPedido": "Pedido",
+  "total": 15590,
+  "__v": 0
+}]

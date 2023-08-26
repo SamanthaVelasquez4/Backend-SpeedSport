@@ -1,0 +1,296 @@
+[{
+  "_id": {
+    "$oid": "64e989aae572e315ef4311f1"
+  },
+  "fecha": "18/08/2023",
+  "cliente": {
+    "_id": "64e7e137688387cfaec13a71",
+    "nombre": "Andrea Gomez",
+    "numTelefono": "+504 2257-9852",
+    "usuario": "andreagomez@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6a7eeaafebaa219169aab",
+    "nombre": "Nike",
+    "numTelefono": "+504 2580-1530",
+    "direccion": "Av. República Dominicana, Tegucigalpa, Honduras"
+  },
+  "productos": [
+    {
+      "_id": "64e6e70be206461d2a083c8f",
+      "nombre": "Short Deportivo",
+      "precio": "500",
+      "tallaElegida": "M",
+      "colorElegido": "#ff0000",
+      "cantidad": 2
+    },
+    {
+      "_id": "64e6e8bae206461d2a083c91",
+      "nombre": "NikeCourt Air Zoom Vapor 11",
+      "precio": "3000",
+      "tallaElegida": "9",
+      "colorElegido": "#ffffff",
+      "cantidad": 1
+    }
+  ],
+  "subtotal": 4000,
+  "isv": 600,
+  "total": 4600,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989b5e572e315ef4311f7"
+  },
+  "fecha": "15/10/2023",
+  "cliente": {
+    "_id": "64e7e137688387cfaec13a71",
+    "nombre": "Andrea Gomez",
+    "numTelefono": "+504 2257-9852",
+    "usuario": "andreagomez@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6a7eeaafebaa219169aab",
+    "nombre": "Nike",
+    "numTelefono": "+504 2580-1530",
+    "direccion": "Av. República Dominicana, Tegucigalpa, Honduras"
+  },
+  "productos": [
+    {
+      "_id": "64e6e9e6e206461d2a083c93",
+      "nombre": "Crop top Nike",
+      "precio": "750",
+      "tallaElegida": "S",
+      "colorElegido": "19e627",
+      "cantidad": 2
+    }
+  ],
+  "subtotal": 1500,
+  "isv": 225,
+  "total": 1725,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989c1e572e315ef4311fd"
+  },
+  "fecha": "23/10/2023",
+  "cliente": {
+    "_id": "64e7e137688387cfaec13a71",
+    "nombre": "Andrea Gomez",
+    "numTelefono": "+504 2257-9852",
+    "usuario": "andreagomez@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6d0ff69b120061c2c9c56",
+    "nombre": "Jordan",
+    "numTelefono": "+504 9811-0000",
+    "direccion": "3RC7+GVX, Blvd. Centroamerica, Tegucigalpa"
+  },
+  "productos": [
+    {
+      "_id": "64e6f4eea7755ea0b6caed50",
+      "nombre": "Jordan Crimson",
+      "precio": "3500",
+      "tallaElegida": "6.5",
+      "colorElegido": "000000",
+      "cantidad": 2
+    }
+  ],
+  "subtotal": 7000,
+  "isv": 1050,
+  "total": 8050,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989d1e572e315ef431203"
+  },
+  "fecha": "23/10/2023",
+  "cliente": {
+    "_id": "64e7e1aa688387cfaec13a73",
+    "nombre": "Orlin Romero",
+    "numTelefono": "+504 9548-8752",
+    "usuario": "orlinromero@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6aaec48c41f30c5bb2600",
+    "nombre": "Adidas",
+    "numTelefono": "+504 2580-1530",
+    "direccion": "Address: 2da planta (arriba de Zara) de Mall Multiplaza, Boulevard Juan Pablo II, Tegucigalpa"
+  },
+  "productos": [
+    {
+      "_id": "64e983ddb9cd4d659b0f68de",
+      "nombre": "Tenis Forum Bonega X",
+      "precio": "4500",
+      "tallaElegida": "7.5",
+      "colorElegido": "dbd1c5",
+      "cantidad": 1
+    }
+  ],
+  "subtotal": 4500,
+  "isv": 675,
+  "total": 5175,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989dae572e315ef431209"
+  },
+  "fecha": "23/10/2023",
+  "cliente": {
+    "_id": "64e7e1aa688387cfaec13a73",
+    "nombre": "Orlin Romero",
+    "numTelefono": "+504 9548-8752",
+    "usuario": "orlinromero@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6d0ff69b120061c2c9c56",
+    "nombre": "Jordan",
+    "numTelefono": "+504 9811-0000",
+    "direccion": "3RC7+GVX, Blvd. Centroamerica, Tegucigalpa"
+  },
+  "productos": [
+    {
+      "_id": "64e6f4eea7755ea0b6caed50",
+      "nombre": "Jordan Crimson",
+      "precio": "3500",
+      "tallaElegida": "6.5",
+      "colorElegido": "000000",
+      "cantidad": 2
+    }
+  ],
+  "subtotal": 7000,
+  "isv": 1050,
+  "total": 8050,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989e7e572e315ef43120f"
+  },
+  "fecha": "30/10/2023",
+  "cliente": {
+    "_id": "64e7e1aa688387cfaec13a73",
+    "nombre": "Orlin Romero",
+    "numTelefono": "+504 9548-8752",
+    "usuario": "orlinromero@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6a7eeaafebaa219169aab",
+    "nombre": "Nike",
+    "numTelefono": "+504 2580-1530",
+    "direccion": "Av. República Dominicana, Tegucigalpa, Honduras"
+  },
+  "productos": [
+    {
+      "_id": "64e6e70be206461d2a083c8f",
+      "nombre": "Short Deportivo",
+      "precio": "500",
+      "tallaElegida": "M",
+      "colorElegido": "ff0000",
+      "cantidad": 2
+    },
+    {
+      "_id": "64e6e8bae206461d2a083c91",
+      "nombre": "NikeCourt Air Zoom Vapor 11",
+      "precio": "3000",
+      "tallaElegida": "8",
+      "colorElegido": "e160bf",
+      "cantidad": 1
+    }
+  ],
+  "subtotal": 4000,
+  "isv": 600,
+  "total": 4600,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e989f8e572e315ef431215"
+  },
+  "fecha": "30/10/2023",
+  "cliente": {
+    "_id": "64e7e1c8688387cfaec13a75",
+    "nombre": "Maria Benitez",
+    "numTelefono": "+504 3248-8752",
+    "usuario": "mariabenitez@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6a7eeaafebaa219169aab",
+    "nombre": "Nike",
+    "numTelefono": "+504 2580-1530",
+    "direccion": "Av. República Dominicana, Tegucigalpa, Honduras"
+  },
+  "productos": [
+    {
+      "_id": "64e6e70be206461d2a083c8f",
+      "nombre": "Short Deportivo",
+      "precio": "500",
+      "tallaElegida": "M",
+      "colorElegido": "#ff0000",
+      "cantidad": 2
+    },
+    {
+      "_id": "64e6e8bae206461d2a083c91",
+      "nombre": "NikeCourt Air Zoom Vapor 11",
+      "precio": "3000",
+      "tallaElegida": "8",
+      "colorElegido": "#e160bf",
+      "cantidad": 1
+    },
+    {
+      "_id": "64e6e9e6e206461d2a083c93",
+      "nombre": "Crop top Nike",
+      "precio": "750",
+      "tallaElegida": "L",
+      "colorElegido": "#19e627",
+      "cantidad": 3
+    }
+  ],
+  "subtotal": 6250,
+  "isv": 937.5,
+  "total": 7187.5,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e98a00e572e315ef43121b"
+  },
+  "fecha": "10/12/2023",
+  "cliente": {
+    "_id": "64e7e1c8688387cfaec13a75",
+    "nombre": "Maria Benitez",
+    "numTelefono": "+504 3248-8752",
+    "usuario": "mariabenitez@ssport.hn"
+  },
+  "numTarjetaCredito": "1234-5678",
+  "empresa": {
+    "_id": "64e6aaec48c41f30c5bb2600",
+    "nombre": "Adidas",
+    "numTelefono": "+504 2580-1530",
+    "direccion": "Address: 2da planta (arriba de Zara) de Mall Multiplaza, Boulevard Juan Pablo II, Tegucigalpa"
+  },
+  "productos": [
+    {
+      "_id": "64e983ddb9cd4d659b0f68de",
+      "nombre": "Tenis Forum Bonega X",
+      "precio": "4500",
+      "tallaElegida": "7",
+      "colorElegido": "#ffa8df",
+      "cantidad": 3
+    }
+  ],
+  "subtotal": 13500,
+  "isv": 2025,
+  "total": 15525,
+  "__v": 0
+}]

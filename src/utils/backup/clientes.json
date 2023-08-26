@@ -1,0 +1,74 @@
+[{
+  "_id": {
+    "$oid": "64e7e137688387cfaec13a71"
+  },
+  "primerNombre": "Andrea",
+  "segundoNombre": "Michelle",
+  "primerApellido": "Gomez",
+  "segundoApellido": "Velasquez",
+  "usuario": "andreagomez@ssport.hn",
+  "contrasena": "1234",
+  "numTelefono": "+504 2257-9852",
+  "genero": "F",
+  "edad": 18,
+  "pedidos": [
+    {
+      "$oid": "64e989aae572e315ef4311f3"
+    },
+    {
+      "$oid": "64e989b5e572e315ef4311f9"
+    },
+    {
+      "$oid": "64e989c1e572e315ef4311ff"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "64e7e1aa688387cfaec13a73"
+  },
+  "primerNombre": "Orlin",
+  "segundoNombre": "Sebastian",
+  "primerApellido": "Romero",
+  "segundoApellido": "Antunez",
+  "usuario": "orlinromero@ssport.hn",
+  "contrasena": "1234",
+  "numTelefono": "+504 9548-8752",
+  "genero": "M",
+  "edad": 53,
+  "pedidos": [
+    {
+      "$oid": "64e989d1e572e315ef431205"
+    },
+    {
+      "$oid": "64e989dae572e315ef43120b"
+    },
+    {
+      "$oid": "64e989e7e572e315ef431211"
+    }
+  ],
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "64e7e1c8688387cfaec13a75"
+  },
+  "primerNombre": "Maria",
+  "segundoNombre": "Jose",
+  "primerApellido": "Benitez",
+  "segundoApellido": "Antunez",
+  "usuario": "mariabenitez@ssport.hn",
+  "contrasena": "1234",
+  "numTelefono": "+504 3248-8752",
+  "genero": "F",
+  "edad": 33,
+  "pedidos": [
+    {
+      "$oid": "64e989f8e572e315ef431217"
+    },
+    {
+      "$oid": "64e98a00e572e315ef43121d"
+    }
+  ],
+  "__v": 0
+}]
