@@ -3,6 +3,7 @@ import cors from 'cors'
 import { Database } from './utils/database';
 import empresasRouter from './routers/empresas.router';
 import productosRouter from './routers/productos.routers';
+import motoristasRouter from './routers/motoristas.router';
 
 const app: Express = express();
 const db: Database = new Database();
@@ -13,6 +14,7 @@ app.use(cors());
 //rutas
 app.use("/empresas", empresasRouter);
 app.use('/productos', productosRouter);
+app.use('/motoristas', motoristasRouter);
 
 
 app.get("/", (req:Request, res: Response) => {
