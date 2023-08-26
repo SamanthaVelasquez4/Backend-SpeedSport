@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const motoristas_controllers_1 = require("../controllers/motoristas.controllers");
-//import { obtenerPedidoEstadoEspecificoMotorista } from '../controllers/pedidos.controller';
+const pedidos_controllers_1 = require("../controllers/pedidos.controllers");
 const router = express_1.default.Router();
 //Usadas Solo en admin
 router.post('/', motoristas_controllers_1.agregarMotorista);
@@ -16,7 +16,7 @@ router.delete('/:id', motoristas_controllers_1.eliminarMotorista);
 router.post('/login', motoristas_controllers_1.loginMotorista);
 router.get('/', motoristas_controllers_1.obtenerMotoristas); //quita los arreglos
 router.get('/:id', motoristas_controllers_1.obtenerMotorista);
-//router.get('/:id/obtenerPedidos/:estado', obtenerPedidoEstadoEspecificoMotorista);
+router.get('/:id/obtenerPedidos/:estado', pedidos_controllers_1.obtenerPedidoEstadoEspecificoMotorista);
 router.put('/:idMotorista/pedido/:idPedido', motoristas_controllers_1.agregarTomadoMotorista);
 router.put('/:idMotorista/pedido/entregado/:idPedido', motoristas_controllers_1.pedidoEntregado);
 router.put('/:idMotorista/mensajeLeido/:posicionArreglo', motoristas_controllers_1.MensajeLeido);

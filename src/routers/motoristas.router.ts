@@ -1,6 +1,6 @@
 import express from 'express'
 import { ActualizarMotoristaCalificacion, MensajeLeido, actualizarContrasena, agregarMotorista, agregarTomadoMotorista, borrarMensaje, eliminarMotorista, loginMotorista, modificarMotorista, obtenerMotorista, obtenerMotoristas, obtenerMotoristasAdministrador, pedidoEntregado } from '../controllers/motoristas.controllers';
-//import { obtenerPedidoEstadoEspecificoMotorista } from '../controllers/pedidos.controller';
+import { obtenerPedidoEstadoEspecificoMotorista } from '../controllers/pedidos.controllers';
 
 const router=express.Router();
 
@@ -14,7 +14,7 @@ router.delete('/:id', eliminarMotorista);
 router.post('/login', loginMotorista );
 router.get('/', obtenerMotoristas); //quita los arreglos
 router.get('/:id', obtenerMotorista);
-//router.get('/:id/obtenerPedidos/:estado', obtenerPedidoEstadoEspecificoMotorista);
+router.get('/:id/obtenerPedidos/:estado', obtenerPedidoEstadoEspecificoMotorista);
 router.put('/:idMotorista/pedido/:idPedido', agregarTomadoMotorista);
 router.put('/:idMotorista/pedido/entregado/:idPedido', pedidoEntregado);
 router.put('/:idMotorista/mensajeLeido/:posicionArreglo', MensajeLeido);
