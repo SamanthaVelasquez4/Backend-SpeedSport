@@ -1,12 +1,16 @@
 import express, {Request, Response, Express} from 'express'
 import cors from 'cors'
 import { Database } from './utils/database';
+import empresasRouter from './routers/empresas.router'
 
 const app: Express = express();
 const db: Database = new Database();
 
 app.use(express.json({ limit: '10mb' }));
 app.use(cors());
+
+//rutas
+app.use("/empresas", empresasRouter);
 
 
 app.get("/", (req:Request, res: Response) => {

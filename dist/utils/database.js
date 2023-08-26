@@ -8,7 +8,7 @@ const mongoose_1 = __importDefault(require("mongoose"));
 class Database {
     constructor() {
         // Cadena de conexión
-        mongoose_1.default.connect(`mongodb+srv://samvel200355:samvel200355@cluster0.tmaxqwh.mongodb.net/?retryWrites=true&w=majority/SpeedSport`)
+        mongoose_1.default.connect(`mongodb+srv://samvel200355:samvel200355@cluster0.tmaxqwh.mongodb.net/SpeedSport`)
             .then(() => {
             console.log('Se conectó a Mongo');
         }).catch((error) => {
