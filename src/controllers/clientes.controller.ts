@@ -2,6 +2,25 @@ import { Response, Request } from "express"
 import { ClienteSchema } from "../models/cliente.schema";
 import { Cliente } from "../models/cliente.model";
 
+//login cliente
+export const loginCliente = (req: Request, res: Response) => {
+    ClienteSchema.findOne({usuario:req.body.usuario, contrasena:req.body.contrasena}, {contrasena:false})
+    .then((result: Cliente|null) => {
+        if(result!=null){
+            res.send({status: true, mensaje:"Usuario encontrado", respuesta:result});
+            res.end();
+        }else{
+            res.send({status: false, mensaje:"Usuario inexistente"});
+            res.end();
+        }
+        
+    })
+    .catch((error:any) => {
+        res.send({status:false, mensaje:"Hubo un error al obtener el motorista", respuesta:error})
+        res.end();
+    });
+}
+
 //agregar cliente
 export const agregarCliente = (req: Request, res: Response) => {
     const p = new ClienteSchema(req.body);

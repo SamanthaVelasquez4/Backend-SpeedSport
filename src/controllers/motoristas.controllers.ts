@@ -249,7 +249,6 @@ export const agregarTomadoMotorista = (req: Request, res: Response) =>{
 
 }
 
-
 //Pedido entregado
 export const pedidoEntregado = (req: Request, res: Response) =>{
     //verificar si existe pedido

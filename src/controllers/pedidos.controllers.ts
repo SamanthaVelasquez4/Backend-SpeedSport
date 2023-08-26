@@ -300,3 +300,74 @@ export const cambiarEstadoCliente = (req: Request, res: Response)=>{
       res.end();
     });
 }
+
+//obtener pedidos entregados de un cliente
+export const obtenerEntragosCliente = (req: Request, res: Response) => {
+    PedidoSchema.aggregate([
+        {
+            $lookup:{
+                from: "facturas", 
+                localField: "_idFactura", 
+                foreignField: "_id", 
+                as: "factura"
+            }
+        },
+        {
+            $match:{
+                'factura.cliente._id': req.params.id,
+                estadoPedido: "Entregado"
+            }
+        },
+    ])
+    .then((result:any)=>{
+        if(result.length>0){
+            res.send({status: true, mensaje:`Se obtuvieron pedidos entregados del cliente`, respuesta:result});
+            res.end();
+        }else{
+            res.send({status: false, mensaje:"No hay pedidos entregados"});
+            res.end();
+        }
+    })
+    .catch((error:any) => {
+        res.send({status:false, mensaje:"Hubo un error al obtener el arreglo", respuesta:error})
+        res.end();
+    });
+}
+
+//obtener pedidos en proceso del cliente
+export const obtenerPedidosEnProcesoCliente = (req: Request, res: Response) => {
+    PedidoSchema.aggregate([
+        {
+            $lookup:{
+                from: "facturas", 
+                localField: "_idFactura", 
+                foreignField: "_id", 
+                as: "factura"
+            }
+        },
+        {
+            $match:{
+                $or:[
+                    {estadoPedido: "Pedido"},
+                    {estadoPedido: "Tomado"}
+                ],
+                $and:[
+                    {'factura.cliente._id': req.params.id  }  
+                ]             
+            }
+        },
+    ])
+    .then((result:any)=>{
+        if(result.length>0){
+            res.send({status: true, mensaje:`Se obtuvieron pedidos en proceso del cliente`, respuesta:result});
+            res.end();
+        }else{
+            res.send({status: false, mensaje:"No hay pedidos en proceso"});
+            res.end();
+        }
+    })
+    .catch((error:any) => {
+        res.send({status:false, mensaje:"Hubo un error al obtener el arreglo", respuesta:error})
+        res.end();
+    });
+}
