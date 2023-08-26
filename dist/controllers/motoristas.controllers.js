@@ -197,7 +197,8 @@ const agregarTomadoMotorista = (req, res) => {
                         $set: {
                             motorista: motorista,
                             estadoPedido: "Tomado",
-                            estadoCliente: "En camino"
+                            estadoCliente: "En camino",
+                            img: "https://img.freepik.com/vector-premium/icono-marca-verificacion-verde-pantalla-telefono-inteligente_163786-734.jpg"
                         }
                     }).then((updateResponse) => {
                         if (updateResponse.modifiedCount > 0) {
@@ -271,7 +272,8 @@ const pedidoEntregado = (req, res) => {
                     pedido_schema_1.PedidoSchema.updateOne({ _id: req.params.idPedido }, {
                         $set: {
                             estadoCliente: "Entregado",
-                            estadoPedido: "Entregado"
+                            estadoPedido: "Entregado",
+                            img: "https://img.freepik.com/free-vector/person-receiving-package-paying-delivery_23-2148773021.jpg?w=740&t=st=1693022482~exp=1693023082~hmac=c0c72cd3c6a2e05e9589da8bd6cd2b2bef1d86bdec85f219f898885cecb8dfba"
                         }
                     }).then((result) => {
                         if (result.modifiedCount > 0) {

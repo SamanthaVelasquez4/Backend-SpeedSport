@@ -10,6 +10,8 @@ const empresas_router_1 = __importDefault(require("./routers/empresas.router"));
 const productos_routers_1 = __importDefault(require("./routers/productos.routers"));
 const motoristas_router_1 = __importDefault(require("./routers/motoristas.router"));
 const clientes_router_1 = __importDefault(require("./routers/clientes.router"));
+const pedidos_router_1 = __importDefault(require("./routers/pedidos.router"));
+const facturas_router_1 = __importDefault(require("./routers/facturas.router"));
 const app = (0, express_1.default)();
 const db = new database_1.Database();
 app.use(express_1.default.json({ limit: '10mb' }));
@@ -19,6 +21,8 @@ app.use("/empresas", empresas_router_1.default);
 app.use('/productos', productos_routers_1.default);
 app.use('/motoristas', motoristas_router_1.default);
 app.use('/clientes', clientes_router_1.default);
+app.use('/pedidos', pedidos_router_1.default);
+app.use('/facturas', facturas_router_1.default);
 app.get("/", (req, res) => {
     res.send("Servidor de prueba para Sport Spot");
     res.end();
