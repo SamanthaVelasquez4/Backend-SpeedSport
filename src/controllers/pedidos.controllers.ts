@@ -371,3 +371,22 @@ export const obtenerPedidosEnProcesoCliente = (req: Request, res: Response) => {
         res.end();
     });
 }
+
+export const calificarPedido = (req: Request, res: Response)=>{
+    PedidoSchema.updateOne({_id:req.params.id},{
+        $set:{
+            calificacion: req.body.calificacion
+        }
+    }).then((updateResponse:any) => {
+        if(updateResponse.modifiedCount>0){
+            res.send({status:true, message: 'Calificacion Actualizada', respuesta:updateResponse});
+            res.end();
+        }else{
+            res.send({status: false, mensaje:"No se modifico calificacion"});
+            res.end();
+        }
+    }).catch((error:any) =>{
+      res.send({status:false, mensaje:"Hubo un error", respuesta:error});
+      res.end();
+    });
+}

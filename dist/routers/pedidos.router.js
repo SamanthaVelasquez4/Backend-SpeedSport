@@ -12,4 +12,5 @@ router.get('/obtener/:estado', pedidos_controllers_1.obtenerPedidosEstado);
 router.get('/:id', pedidos_controllers_1.obtenerPedido);
 router.put('/:idPedido/agregarAdminitrador/motorista/:idMotorista', pedidos_controllers_1.agregarMotoristaPedido);
 router.put('/:id/cambiarEstadoCliente', pedidos_controllers_1.cambiarEstadoCliente);
+router.put('/:id/calificar', pedidos_controllers_1.calificarPedido);
 exports.default = router;

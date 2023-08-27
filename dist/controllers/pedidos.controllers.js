@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.obtenerPedidosEnProcesoCliente = exports.obtenerEntragosCliente = exports.cambiarEstadoCliente = exports.obtenerPedidoEstadoEspecificoMotorista = exports.obtenerPedido = exports.obtenerPedidosEstado = exports.agregarMotoristaPedido = exports.obtenerPedidos = exports.agregarPedido = void 0;
+exports.calificarPedido = exports.obtenerPedidosEnProcesoCliente = exports.obtenerEntragosCliente = exports.cambiarEstadoCliente = exports.obtenerPedidoEstadoEspecificoMotorista = exports.obtenerPedido = exports.obtenerPedidosEstado = exports.agregarMotoristaPedido = exports.obtenerPedidos = exports.agregarPedido = void 0;
 const pedido_schema_1 = require("../models/pedido.schema");
 const mongoose_1 = __importDefault(require("mongoose"));
 const factura_schema_1 = require("../models/factura.schema");
@@ -374,3 +374,23 @@ const obtenerPedidosEnProcesoCliente = (req, res) => {
     });
 };
 exports.obtenerPedidosEnProcesoCliente = obtenerPedidosEnProcesoCliente;
+const calificarPedido = (req, res) => {
+    pedido_schema_1.PedidoSchema.updateOne({ _id: req.params.id }, {
+        $set: {
+            calificacion: req.body.calificacion
+        }
+    }).then((updateResponse) => {
+        if (updateResponse.modifiedCount > 0) {
+            res.send({ status: true, message: 'Calificacion Actualizada', respuesta: updateResponse });
+            res.end();
+        }
+        else {
+            res.send({ status: false, mensaje: "No se modifico calificacion" });
+            res.end();
+        }
+    }).catch((error) => {
+        res.send({ status: false, mensaje: "Hubo un error", respuesta: error });
+        res.end();
+    });
+};
+exports.calificarPedido = calificarPedido;
